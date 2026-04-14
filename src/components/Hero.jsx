@@ -33,11 +33,6 @@ function Hero() {
           transition={{ duration: 0.75, ease: 'easeOut', delay: 0.08 }}
           className="relative mx-auto w-full max-w-sm"
         >
-          <img
-            src="/fotoku.png"
-            alt="Muhammad Rizal Al Baihaqi"
-            className="h-auto w-full object-contain drop-shadow-[0_14px_45px_rgba(168,85,247,0.4)]"
-          />
         </motion.div>
       </div>
     </section>
