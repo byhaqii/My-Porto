@@ -22,14 +22,20 @@ function Portfolio({ projects }) {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <motion.article
+            <motion.a
               key={project.id}
+              href={project.link || undefined}
+              target={project.link ? '_blank' : undefined}
+              rel={project.link ? 'noreferrer' : undefined}
               initial={{ opacity: 0, y: 26 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               whileHover={{ y: -6, scale: 1.02 }}
-              className="group glow-card rounded-2xl p-4 transition"
+              className={`group glow-card rounded-2xl p-4 transition ${
+                project.link ? 'cursor-pointer' : 'cursor-default'
+              } block`}
+              aria-label={project.link ? `Open ${project.title}` : project.title}
             >
               <img
                 src={project.image}
@@ -43,24 +49,12 @@ function Portfolio({ projects }) {
                 <p className="mt-2 text-base leading-relaxed text-slate-300">
                   {project.description}
                 </p>
-                {project.link ? (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 text-base text-purple-300 transition group-hover:text-purple-200"
-                  >
-                    Preview
-                    <ExternalLink size={15} />
-                  </a>
-                ) : (
-                  <div className="mt-4 inline-flex items-center gap-2 text-base text-purple-300/70">
-                    Preview
-                    <ExternalLink size={15} />
-                  </div>
-                )}
+                <div className="mt-4 inline-flex items-center gap-2 text-base text-purple-300 transition group-hover:text-purple-200">
+                  Preview
+                  <ExternalLink size={15} />
+                </div>
               </div>
-            </motion.article>
+            </motion.a>
           ))}
         </div>
       </div>
