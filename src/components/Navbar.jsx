@@ -4,7 +4,7 @@ import { useState } from 'react'
 const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'portfolio', label: 'Portfolio' },
+  { id: 'portofolio', label: 'Portofolio' },
   { id: 'skills', label: 'Skills' },
   { id: 'contact', label: 'Contact' },
 ]
