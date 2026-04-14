@@ -6,7 +6,7 @@ function Hero() {
       id="home"
       className="relative flex min-h-screen items-center px-4 pt-24 md:px-6"
     >
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,6 +24,20 @@ function Hero() {
             UI/UX enthusiast, graphic design explorer, and mobile developer
             focused on building meaningful digital experiences.
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.75, ease: 'easeOut', delay: 0.08 }}
+          className="relative mx-auto w-full max-w-sm"
+        >
+          <img
+            src="/fotoku.png"
+            alt="Muhammad Rizal Al Baihaqi"
+            className="h-auto w-full object-contain drop-shadow-[0_14px_45px_rgba(168,85,247,0.4)]"
+          />
         </motion.div>
       </div>
     </section>
