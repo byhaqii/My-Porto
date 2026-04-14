@@ -12,15 +12,15 @@ function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="glow-card max-w-3xl rounded-3xl p-6 md:p-10"
+          className="glow-card max-w-2xl rounded-3xl p-5 md:p-8"
         >
-          <p className="mb-4 text-sm uppercase tracking-[0.18em] text-purple-300 md:text-base">
+          <p className="mb-3 text-xs uppercase tracking-[0.16em] text-purple-300 md:text-sm">
             Personal Portfolio
           </p>
-          <h1 className="font-heading text-3xl leading-tight text-white md:text-5xl">
+          <h1 className="font-heading text-2xl leading-snug text-white md:text-4xl">
             Hello, my name is Muhammad Rizal Al Baihaqi
           </h1>
-          <p className="mt-6 max-w-2xl text-base text-slate-300 md:text-lg">
+          <p className="mt-5 max-w-xl text-sm text-slate-300 md:text-base">
             UI/UX enthusiast, graphic design explorer, and mobile developer
             focused on building meaningful digital experiences.
           </p>
