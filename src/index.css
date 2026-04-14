@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lato', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-[#05010a] text-slate-100 antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .section-spacing {
+    @apply py-20 md:py-28;
+  }
+
+  .glow-card {
+    @apply border border-purple-400/25 bg-white/5 shadow-[0_0_0_1px_rgba(167,139,250,0.12),0_0_35px_rgba(126,34,206,0.18)] backdrop-blur-xl;
+  }
+
+  .icon-button {
+    @apply rounded-xl border border-purple-400/30 bg-black/35 p-2.5 text-purple-200 transition hover:scale-105 hover:border-purple-300 hover:text-white hover:shadow-[0_0_18px_rgba(168,85,247,0.45)];
+  }
+
+  .glow-silhouette {
+    @apply rounded-full border border-purple-300/35 bg-purple-600/30 blur-3xl;
+    box-shadow: 0 0 130px rgba(168, 85, 247, 0.62);
+  }
+
+  .purple-beam {
+    @apply absolute top-[-12%] h-[135%] w-[22rem] rounded-full blur-3xl;
+    background: linear-gradient(
+      90deg,
+      rgba(236, 72, 153, 0) 0%,
+      rgba(192, 132, 252, 0.5) 38%,
+      rgba(216, 180, 254, 0.92) 50%,
+      rgba(192, 132, 252, 0.5) 62%,
+      rgba(236, 72, 153, 0) 100%
+    );
+    box-shadow: 0 0 165px rgba(168, 85, 247, 0.78);
+  }
+
+  .beam-left {
+    left: -10rem;
+    transform: rotate(16deg);
+  }
+
+  .beam-right {
+    right: -9rem;
+    transform: rotate(-16deg);
+  }
+
+  .beam-right-soft {
+    right: 4%;
+    width: 14rem;
+    opacity: 0.62;
+    transform: rotate(-12deg);
+  }
+
+  .noise-overlay {
+    opacity: 0.08;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.35) 0.6px, transparent 0.6px);
+    background-size: 2px 2px;
+    mix-blend-mode: soft-light;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
