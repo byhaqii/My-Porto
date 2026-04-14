@@ -10,11 +10,12 @@ export const portfolioData = [
   },
   {
     id: 2,
-    title: 'Brand Identity Kit',
+    title: 'Figma UI/UX Design (Fruit Marketplace)',
     description:
-      'A cohesive visual identity system including logo set, color palette, and social templates.',
+      'A Figma design project for a fruit market concept, focused on clean layout, clear user flow, and an engaging visual experience.',
     image:
-      'https://placehold.co/640x420/180528/c084fc?text=Project+02',
+      '/figmaLogo.png',
+    link: 'https://www.figma.com/design/WApRJ3WbHr3w07YV7eOYKi/PBL-Fruit-Market?node-id=0-1&t=2PdVHlt5QVecKqZm-1'
   },
   {
     id: 3,
