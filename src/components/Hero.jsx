@@ -15,7 +15,7 @@ function Hero() {
           className="glow-card max-w-2xl rounded-3xl p-5 md:p-8"
         >
           <p className="mb-3 text-xs uppercase tracking-[0.16em] text-purple-300 md:text-sm">
-            Personal Portofolio
+            Personal Portfolio
           </p>
           <h1 className="font-heading text-2xl leading-snug text-white md:text-4xl">
             Hello, my name is Muhammad Rizal Al Baihaqi
