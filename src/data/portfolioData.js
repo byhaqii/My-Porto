@@ -15,7 +15,7 @@ export const portfolioData = [
       'A Figma design project for a fruit market concept, focused on clean layout, clear user flow, and an engaging visual experience.',
     image:
       '/figmaLogo.png',
-    link: 'https://www.figma.com/design/WApRJ3WbHr3w07YV7eOYKi/PBL-Fruit-Market?node-id=0-1&t=2PdVHlt5QVecKqZm-1'
+    link: 'https://www.figma.com/design/WApRJ3WbHr3w07YV7eOYKi/PBL-Fruit-Market?node-id=0-1&t=2PdVHlt5QVecKqZm-1',
   },
   {
     id: 3,
