@@ -43,10 +43,22 @@ function Portfolio({ projects }) {
                 <p className="mt-2 text-base leading-relaxed text-slate-300">
                   {project.description}
                 </p>
-                <div className="mt-4 inline-flex items-center gap-2 text-base text-purple-300 transition group-hover:text-purple-200">
-                  Preview
-                  <ExternalLink size={15} />
-                </div>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-base text-purple-300 transition group-hover:text-purple-200"
+                  >
+                    Preview
+                    <ExternalLink size={15} />
+                  </a>
+                ) : (
+                  <div className="mt-4 inline-flex items-center gap-2 text-base text-purple-300/70">
+                    Preview
+                    <ExternalLink size={15} />
+                  </div>
+                )}
               </div>
             </motion.article>
           ))}

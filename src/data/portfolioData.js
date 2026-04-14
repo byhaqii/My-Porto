@@ -1,11 +1,12 @@
 export const portfolioData = [
   {
     id: 1,
-    title: 'Mobile UI Concept',
+    title: 'Shustle Project',
     description:
-      'A clean onboarding and dashboard concept focused on usability and visual hierarchy.',
+      'Shustle is my own side hustle project, created to gain experience, earn additional income, and grow together through real-world work.',
     image:
-      'https://placehold.co/640x420/12031f/a855f7?text=Project+01',
+      'src/assets/shustleLogo.png',
+    link: 'https://www.instagram.com/shstlee/',
   },
   {
     id: 2,
