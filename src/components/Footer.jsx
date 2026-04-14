@@ -1,3 +1,5 @@
+import { BiLogoLinkedin } from 'react-icons/bi'
+import { SiGithub, SiInstagram, SiWhatsapp } from 'react-icons/si'
 import { motion } from 'framer-motion'
 
 function Footer() {
@@ -21,36 +23,36 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="WhatsApp"
-            className="icon-button px-4 py-2 text-sm font-semibold"
+            className="icon-button inline-flex h-12 w-12 items-center justify-center"
           >
-            WhatsApp
+            <SiWhatsapp size={20} />
           </a>
           <a
             href="https://www.instagram.com/byhaqii__/"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
-            className="icon-button px-4 py-2 text-sm font-semibold"
+            className="icon-button inline-flex h-12 w-12 items-center justify-center"
           >
-            Instagram
+            <SiInstagram size={20} />
           </a>
           <a
             href="https://github.com/byhaqii"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="icon-button px-4 py-2 text-sm font-semibold"
+            className="icon-button inline-flex h-12 w-12 items-center justify-center"
           >
-            GitHub
+            <SiGithub size={20} />
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-rizal-al-baihaqi-7b28a3336/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="icon-button px-4 py-2 text-sm font-semibold"
+            className="icon-button inline-flex h-12 w-12 items-center justify-center"
           >
-            LinkedIn
+            <BiLogoLinkedin size={22} />
           </a>
         </div>
       </motion.div>

@@ -28,7 +28,7 @@ function Navbar() {
           onClick={() => handleScroll('home')}
           className="font-heading !text-3xl font-bold tracking-[0.2em] text-purple-200 transition hover:text-white md:!text-4xl"
         >
-          MRAB
+          Portofolio Baihaqi
         </button>
 
         <ul className="hidden items-center gap-8 md:flex">
