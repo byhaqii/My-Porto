@@ -1,4 +1,3 @@
-import { Mail, Phone, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 function Footer() {
@@ -16,15 +15,42 @@ function Footer() {
           <p className="mt-1 text-lg text-slate-300 md:text-xl">Let&apos;s build something impactful together.</p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <a href="#" aria-label="Email" className="icon-button">
-            <Mail size={18} />
+        <div className="flex flex-wrap items-center gap-3">
+          <a
+            href="https://wa.me/6282228472871"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+            className="icon-button px-4 py-2 text-sm font-semibold"
+          >
+            WhatsApp
           </a>
-          <a href="#" aria-label="Phone" className="icon-button">
-            <Phone size={18} />
+          <a
+            href="https://www.instagram.com/byhaqii__/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="icon-button px-4 py-2 text-sm font-semibold"
+          >
+            Instagram
           </a>
-          <a href="#" aria-label="Location" className="icon-button">
-            <MapPin size={18} />
+          <a
+            href="https://github.com/byhaqii"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="icon-button px-4 py-2 text-sm font-semibold"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-rizal-al-baihaqi-7b28a3336/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="icon-button px-4 py-2 text-sm font-semibold"
+          >
+            LinkedIn
           </a>
         </div>
       </motion.div>
