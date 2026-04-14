@@ -5,7 +5,7 @@ export const portfolioData = [
     description:
       'Shustle is my own side hustle project, created to gain experience, earn additional income, and grow together through real-world work.',
     image:
-      'src/assets/shustleLogo.png',
+      '/shustleLogo.png',
     link: 'https://www.instagram.com/shstlee/',
   },
   {
