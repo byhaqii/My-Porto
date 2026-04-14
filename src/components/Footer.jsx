@@ -23,36 +23,40 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="WhatsApp"
-            className="icon-button inline-flex h-12 w-12 items-center justify-center"
+            className="icon-button inline-flex items-center gap-2 px-3 py-2 text-sm font-semibold text-[#25D366]"
           >
             <SiWhatsapp size={20} />
+            <span>WhatsApp</span>
           </a>
           <a
             href="https://www.instagram.com/byhaqii__/"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
-            className="icon-button inline-flex h-12 w-12 items-center justify-center"
+            className="icon-button inline-flex items-center gap-2 px-3 py-2 text-sm font-semibold text-[#E1306C]"
           >
             <SiInstagram size={20} />
+            <span>Instagram</span>
           </a>
           <a
             href="https://github.com/byhaqii"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="icon-button inline-flex h-12 w-12 items-center justify-center"
+            className="icon-button inline-flex items-center gap-2 px-3 py-2 text-sm font-semibold text-slate-100"
           >
             <SiGithub size={20} />
+            <span>GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-rizal-al-baihaqi-7b28a3336/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="icon-button inline-flex h-12 w-12 items-center justify-center"
+            className="icon-button inline-flex items-center gap-2 px-3 py-2 text-sm font-semibold text-[#0A66C2]"
           >
             <BiLogoLinkedin size={22} />
+            <span>LinkedIn</span>
           </a>
         </div>
       </motion.div>
