@@ -21,7 +21,7 @@ function Hero() {
     >
       <MotionDiv
         style={{ y, opacity }}
-        className="mx-auto grid w-full max-w-6xl items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-10"
+        className="mx-auto grid w-full max-w-5xl items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-10"
       >
         <MotionDiv
           initial={{ opacity: 0, y: 30 }}
