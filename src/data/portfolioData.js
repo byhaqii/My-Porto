@@ -19,10 +19,38 @@ export const portfolioData = [
   },
   {
     id: 3,
-    title: 'Flutter Habit App',
+    title: 'Github',
     description:
-      'A lightweight Flutter application for daily habit tracking with simple analytics.',
+      'My GitHub profile featuring projects, experiments, and code I have worked on.',
     image:
-      'https://placehold.co/640x420/0f041a/e879f9?text=Project+03',
+      'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+    link: 'https://github.com/byhaqii',
+  },
+  {
+    id: 4,
+    title: 'My Design',
+    description:
+      'About some of my design work and creative direction.',
+    image:
+      'https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png',
+    link: 'https://drive.google.com/drive/folders/1X5blDqur6453oMfPzMU3Arzh6SJ2l45F?usp=share_link',
+  },
+  {
+    id: 5,
+    title: 'Coming Soon',
+    description:
+      'A new project is in progress and will be shared here soon.',
+    image:
+      'https://placehold.co/640x420/0f041a/e879f9?text=Coming+Soon',
+    link: '',
+  },
+  {
+    id: 6,
+    title: 'Coming Soon',
+    description:
+      'Another upcoming project is being prepared for this portfolio.',
+    image:
+      'https://placehold.co/640x420/0f041a/e879f9?text=Coming+Soon',
+    link: '',
   },
 ]

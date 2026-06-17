@@ -1,8 +1,9 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
-import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
+import Experience from '../components/Experience'
+import Portfolio from '../components/Portfolio'
 import Footer from '../components/Footer'
 import GlowSilhouettes from '../components/GlowSilhouettes'
 import { portfolioData } from '../data/portfolioData'
@@ -16,8 +17,9 @@ function Home() {
         <main>
           <Hero />
           <About />
-          <Portfolio projects={portfolioData} />
           <Skills />
+          <Experience />
+          <Portfolio projects={portfolioData} />
         </main>
         <Footer />
       </div>

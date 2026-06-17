@@ -36,6 +36,51 @@
 
   .glow-card {
     @apply border border-purple-400/25 bg-white/5 shadow-[0_0_0_1px_rgba(167,139,250,0.12),0_0_35px_rgba(126,34,206,0.18)] backdrop-blur-xl;
+    position: relative;
+    overflow: hidden;
+    transition:
+      border-color 0.22s ease,
+      box-shadow 0.22s ease,
+      filter 0.22s ease,
+      transform 0.22s ease;
+    will-change: transform;
+  }
+
+  .glow-card::before {
+    content: '';
+    position: absolute;
+    top: -130%;
+    left: -55%;
+    width: 40%;
+    height: 360%;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate3d(-220%, 0, 0) rotate(20deg);
+    will-change: transform, opacity;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(248, 244, 255, 0.05) 25%,
+      rgba(248, 244, 255, 0.45) 50%,
+      rgba(248, 244, 255, 0.05) 75%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transition: transform 0.72s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.28s ease;
+  }
+
+  .glow-card:hover::before {
+    transform: translate3d(420%, 0, 0) rotate(20deg);
+    opacity: 0.82;
+  }
+
+  .glow-card:hover {
+    border-color: rgba(216, 180, 254, 0.55);
+    box-shadow:
+      0 0 0 1px rgba(216, 180, 254, 0.34),
+      0 14px 40px rgba(76, 29, 149, 0.32),
+      0 0 55px rgba(168, 85, 247, 0.31);
+    filter: saturate(1.08) brightness(1.03);
+    transform: translateY(-6px) scale(1.01);
   }
 
   .icon-button {

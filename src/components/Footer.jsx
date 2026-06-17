@@ -2,10 +2,12 @@ import { BiLogoLinkedin } from 'react-icons/bi'
 import { SiGithub, SiInstagram, SiWhatsapp } from 'react-icons/si'
 import { motion } from 'framer-motion'
 
+const MotionDiv = motion.div
+
 function Footer() {
   return (
     <footer id="contact" className="section-spacing px-4 pb-10 md:px-6">
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
@@ -59,7 +61,7 @@ function Footer() {
             <span>LinkedIn</span>
           </a>
         </div>
-      </motion.div>
+      </MotionDiv>
     </footer>
   )
 }
