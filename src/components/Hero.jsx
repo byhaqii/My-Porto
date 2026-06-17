@@ -1,14 +1,28 @@
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 const MotionDiv = motion.div
 
 function Hero() {
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start start', 'end start'],
+  })
+
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0])
+
   return (
     <section
+      ref={ref}
       id="home"
       className="relative flex min-h-screen items-center px-4 pt-24 md:px-6"
     >
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
+      <MotionDiv
+        style={{ y, opacity }}
+        className="mx-auto grid w-full max-w-6xl items-center gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-10"
+      >
         <MotionDiv
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +50,7 @@ function Hero() {
           className="relative mx-auto w-full max-w-sm"
         >
         </MotionDiv>
-      </div>
+      </MotionDiv>
     </section>
   )
 }
