@@ -36,7 +36,7 @@ const experiences = [
 function Experience() {
   return (
     <section id="experience" className="section-spacing px-4 md:px-6">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-5xl">
         <MotionDiv
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ function Experience() {
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.45, delay: index * 0.08 }}
                 whileHover={{ scale: 1.03, y: -4 }}
-                className="group glow-card rounded-2xl p-6"
+                className="group glow-card rounded-2xl p-5"
               >
                 <Icon className="mb-4 text-purple-300 transition group-hover:text-purple-200" />
                   <h3 className="text-lg font-medium text-white sm:text-xl md:text-2xl lg:text-3xl">

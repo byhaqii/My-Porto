@@ -12,7 +12,7 @@ function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.6 }}
-        className="glow-card mx-auto flex max-w-6xl flex-col items-start justify-between gap-5 rounded-3xl p-8 sm:flex-row sm:items-center"
+        className="glow-card mx-auto flex max-w-5xl flex-col items-start justify-between gap-5 rounded-3xl p-6 sm:flex-row sm:items-center"
       >
         <div>
           <h2 className="text-2xl font-semibold text-white md:text-3xl">Contact</h2>

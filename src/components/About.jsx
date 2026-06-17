@@ -10,9 +10,9 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.6 }}
-        className="mx-auto max-w-6xl"
+        className="mx-auto max-w-5xl"
       >
-        <div className="glow-card rounded-3xl p-8 md:p-10">
+        <div className="glow-card rounded-3xl p-6 md:p-8">
             <h2 className="mb-5 text-2xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-5xl">
               About Me
             </h2>

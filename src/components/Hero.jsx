@@ -28,7 +28,7 @@ function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="glow-card w-full max-w-4xl rounded-3xl p-6 md:min-h-[340px] md:p-10 lg:min-h-[380px] lg:p-12"
+          className="glow-card w-full max-w-3xl rounded-3xl p-5 md:min-h-[280px] md:p-8 lg:min-h-[320px] lg:p-10"
         >
           <p className="mb-3 text-sm uppercase tracking-[0.16em] text-purple-300 md:text-base">
             Personal Portfolio

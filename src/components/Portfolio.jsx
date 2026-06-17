@@ -7,7 +7,7 @@ const MotionA = motion.a
 function Portfolio({ projects }) {
   return (
     <section id="portfolio" className="section-spacing px-4 md:px-6">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-5xl">
         <MotionDiv
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ function Portfolio({ projects }) {
                 },
               }}
               whileTap={{ scale: project.link ? 0.992 : 1 }}
-              className={`group glow-card rounded-2xl p-4 transition ${
+              className={`group glow-card rounded-2xl p-3 transition ${
                 project.link ? 'cursor-pointer' : 'cursor-default'
               } block`}
               aria-label={project.link ? `Open ${project.title}` : project.title}
