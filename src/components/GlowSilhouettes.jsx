@@ -11,9 +11,9 @@ function GlowSilhouettes() {
   })
 
   // Create different parallax speeds for depth
-  const ySlow = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
-  const yMedium = useTransform(scrollYProgress, [0, 1], ['0%', '40%'])
-  const yFast = useTransform(scrollYProgress, [0, 1], ['0%', '60%'])
+  const ySlow = useTransform(scrollYProgress, [0, 1], ['0vh', '30vh'])
+  const yMedium = useTransform(scrollYProgress, [0, 1], ['0vh', '60vh'])
+  const yFast = useTransform(scrollYProgress, [0, 1], ['0vh', '100vh'])
 
   return (
     <div ref={containerRef} className="pointer-events-none absolute inset-0 z-0 overflow-hidden">

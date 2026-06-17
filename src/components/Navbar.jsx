@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-purple-500/20 bg-black/55 backdrop-blur-lg">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
         <button
           onClick={() => handleScroll('home')}
           className="font-heading !text-3xl font-bold tracking-[0.16em] text-purple-200 transition hover:text-white md:!text-4xl"

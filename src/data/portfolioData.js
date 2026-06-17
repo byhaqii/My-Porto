@@ -28,7 +28,7 @@ export const portfolioData = [
   },
   {
     id: 4,
-    title: 'My Design',
+    title: 'My Project',
     description:
       'About some of my design work and creative direction.',
     image:
