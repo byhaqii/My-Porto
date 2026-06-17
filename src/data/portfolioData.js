@@ -37,12 +37,12 @@ export const portfolioData = [
   },
   {
     id: 5,
-    title: 'Coming Soon',
+    title: 'Aetheris - Air Quality Control',
     description:
-      'A new project is in progress and will be shared here soon.',
+      'As the Frontend Developer for the Aetheris IoT project, I took ownership of the client-side architecture and user interface. I spearheaded the frontend development, from integrating real-time sensor data via Firebase RTDB to building dynamic, responsive Admin and User dashboards. Beyond implementing features, I proactively led the frontend Quality Control (QC) initiatives by independently testing, debugging, and refining UI/UX components to ensure a highly stable, intuitive, and production-ready application.',
     image:
-      'https://placehold.co/640x420/0f041a/e879f9?text=Coming+Soon',
-    link: '',
+      '/AetherisDashboard.jpeg',
+    link: 'https://github.com/khoirul2003/aetheris-pbl',
   },
   {
     id: 6,

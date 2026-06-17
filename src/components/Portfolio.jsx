@@ -61,7 +61,7 @@ function Portfolio({ projects }) {
                 <h3 className="text-lg font-semibold text-white sm:text-xl md:text-2xl lg:text-3xl">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-300 sm:text-base md:text-lg lg:text-xl">
+                <p className="mt-2 text-sm leading-relaxed text-slate-300 line-clamp-3 sm:text-base md:text-lg lg:text-xl">
                   {project.description}
                 </p>
                 <div className="mt-4 inline-flex items-center gap-2 text-sm text-purple-300 transition group-hover:text-purple-200 sm:text-base md:text-lg lg:text-xl">
